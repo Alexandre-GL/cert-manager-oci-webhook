@@ -49,7 +49,7 @@ subjects:
   - apiGroup: ""
     kind: ServiceAccount
     name: cert-manager-oci-webhook
-    namespace: argocd
+    namespace: cert-manager
 ---
 # Source: oci-webhook/templates/rbac.yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -76,7 +76,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: cert-manager-oci-webhook:secret-reader
-  namespace: argocd
+  namespace: cert-manager
 rules:
   - apiGroups:
     - ""
@@ -108,14 +108,14 @@ subjects:
   - apiGroup: ""
     kind: ServiceAccount
     name: cert-manager-oci-webhook
-    namespace: argocd
+    namespace: cert-manager
 ---
 # Source: oci-webhook/templates/rbac.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: cert-manager-oci-webhook:secret-reader
-  namespace: argocd
+  namespace: cert-manager
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -124,7 +124,7 @@ subjects:
   - apiGroup: ""
     kind: ServiceAccount
     name: cert-manager-oci-webhook
-    namespace: argocd
+    namespace: cert-manager
 ---
 # Source: oci-webhook/templates/service.yaml
 apiVersion: v1
@@ -216,14 +216,14 @@ metadata:
     release: cert-manager-oci-webhook
     heritage: Helm
   annotations:
-    cert-manager.io/inject-ca-from: "argocd/cert-manager-oci-webhook-webhook-tls"
+    cert-manager.io/inject-ca-from: "cert-manager/cert-manager-oci-webhook-webhook-tls"
 spec:
   group: alexgl.fr
   groupPriorityMinimum: 1000
   versionPriority: 15
   service:
     name: cert-manager-oci-webhook
-    namespace: argocd
+    namespace: cert-manager
   version: v1alpha1
 ---
 # Source: oci-webhook/templates/pki.yaml
@@ -232,7 +232,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: cert-manager-oci-webhook-ca
-  namespace: "argocd"
+  namespace: "cert-manager"
   labels:
     app: oci-webhook
     chart: oci-webhook-0.1.0
@@ -252,7 +252,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: cert-manager-oci-webhook-webhook-tls
-  namespace: "argocd"
+  namespace: "cert-manager"
   labels:
     app: oci-webhook
     chart: oci-webhook-0.1.0
@@ -265,8 +265,8 @@ spec:
     name: cert-manager-oci-webhook-ca
   dnsNames:
   - cert-manager-oci-webhook
-  - cert-manager-oci-webhook.argocd
-  - cert-manager-oci-webhook.argocd.svc
+  - cert-manager-oci-webhook.cert-manager
+  - cert-manager-oci-webhook.cert-manager.svc
 ---
 # Source: oci-webhook/templates/pki.yaml
 # Create a selfsigned Issuer, in order to create a root CA certificate for
@@ -275,7 +275,7 @@ apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: cert-manager-oci-webhook-selfsign
-  namespace: "argocd"
+  namespace: "cert-manager"
   labels:
     app: oci-webhook
     chart: oci-webhook-0.1.0
@@ -290,7 +290,7 @@ apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: cert-manager-oci-webhook-ca
-  namespace: "argocd"
+  namespace: "cert-manager"
   labels:
     app: oci-webhook
     chart: oci-webhook-0.1.0
