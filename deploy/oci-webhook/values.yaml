@@ -13,7 +13,7 @@ certManager:
   serviceAccountName: cert-manager
 
 image:
-  repository: ghcr.io/alexandre-gl/cert-manager-webhook-oci
+  repository: ghcr.io/alexandre-gl/cert-manager-oci-webhook
   tag: latest
   pullPolicy: IfNotPresent
 

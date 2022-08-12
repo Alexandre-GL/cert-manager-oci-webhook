@@ -1,4 +1,4 @@
-IMAGE_NAME := "webhook"
+IMAGE_NAME := "ghcr.io/alexandre-gl/cert-manager-oci-webhook"
 IMAGE_TAG := "latest"
 
 OUT := $(shell pwd)/_out
@@ -15,17 +15,6 @@ export TEST_ASSET_KUBECTL=_test/kubebuilder/bin/kubectl
 
 build:
 	docker build -t "$(IMAGE_NAME):$(IMAGE_TAG)" .
-
-release:
-	docker buildx build -t "$(IMAGE_NAME):$(IMAGE_TAG)" --platform=linux/amd64,linux/arm64 --push .
-
-.PHONY: rendered-manifest.yaml
-rendered-manifest.yaml:
-	helm template \
-			--name example-webhook \
-				--set image.repository=$(IMAGE_NAME) \
-				--set image.tag=$(IMAGE_TAG) \
-				deploy/example-webhook > "$(OUT)/rendered-manifest.yaml"
 
 test: _test/kubebuilder
 	go test -v .
