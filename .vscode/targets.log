@@ -1,0 +1,342 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Fri Aug 12 16:22:45 2022
+
+# Variables
+
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile (from `Makefile', line 7)
+KUBE_VERSION = 1.24.2
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 13)
+TEST_ASSET_KUBE_APISERVER = _test/kubebuilder/bin/kube-apiserver
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/alexandre/oci/cert-manager-webhook-oci
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+IMAGE_NAME := "webhook"
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_INJECTION = 1
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:
+# environment
+P9K_SSH = 0
+# environment
+VSCODE_CWD = /Users/alexandre/oci/cert-manager-webhook-oci
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# environment
+PATH = /Users/alexandre/go/bin:/Users/alexandre/Downloads/google-cloud-sdk/bin:/Users/alexandre/.krew/bin:/Users/alexandre/.krew/bin:/Users/alexandre/.local/bin:/usr/local/bin:/Users/alexandre/bin:/Users/alexandre/Library/Python/3.8/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/alexandre/Downloads/google-cloud-sdk/bin:/Users/alexandre/.krew/bin:/Users/alexandre/.local/bin:/Users/alexandre/bin:/Users/alexandre/Library/Python/3.8/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 12)
+TEST_ASSET_ETCD = _test/kubebuilder/bin/etcd
+# environment
+ZDOTDIR = /var/folders/s7/hs2bk37d6lsc_wx1dhg6lbrr0000gn/T/vscode-zsh
+# environment
+GOPATH = /Users/alexandre/go
+# makefile (from `Makefile', line 2)
+IMAGE_TAG := "latest"
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.3g0XuP73Ch/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/alexandre/oci/cert-manager-webhook-oci
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:
+# environment
+GOMODCACHE = /Users/alexandre/go/pkg/mod
+# environment
+HOME = /Users/alexandre
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/alexandre/Library/Application Support/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
+# environment
+LOGNAME = alexandre
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/alexandre/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = alexandre
+# makefile
+.DEFAULT_GOAL := build
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+TERM_PROGRAM = vscode
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/s7/hs2bk37d6lsc_wx1dhg6lbrr0000gn/T/
+# automatic
+*F = $(notdir $*)
+# makefile (from `Makefile', line 8)
+OS = $(shell go env GOOS)
+# environment
+VSCODE_IPC_HOOK = /Users/alexandre/Library/Application Support/Code/1.70.1-main.sock
+# environment
+VSCODE_GIT_ASKPASS_NODE = /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper
+# environment
+MallocNanoZone = 0
+# makefile (from `Makefile', line 9)
+ARCH = $(shell go env GOARCH)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 1.70.1
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.15602919.15602925.EBA13E19-7351-482D-BBA5-0DDACCE232AE
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x1
+# environment
+COMMAND_MODE = unix2003
+# environment
+GIT_ASKPASS = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 5)
+BINARY := webhook
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 14)
+TEST_ASSET_KUBECTL = _test/kubebuilder/bin/kubectl
+# makefile (from `Makefile', line 4)
+OUT := /Users/alexandre/oci/cert-manager-webhook-oci/_out
+# environment
+P9K_TTY = old
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+VSCODE_GIT_IPC_HANDLE = /var/folders/s7/hs2bk37d6lsc_wx1dhg6lbrr0000gn/T/vscode-git-abf7f10293.sock
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+_P9K_TTY = /dev/ttys006
+# environment
+VSCODE_PID = 63083
+# variable set hash-table stats:
+# Load=96/1024=9%, Rehash=0, Collisions=6/127=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777229, inode 15634406): 20 files, no impossibilities.
+
+# 20 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: rendered-manifest.yaml
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 16:09:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+test: _test/kubebuilder
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 31):
+	go test -v .
+	
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 17):
+	docker build -t "$(IMAGE_NAME):$(IMAGE_TAG)" .
+	
+
+release:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 20):
+	docker buildx build -t "$(IMAGE_NAME):$(IMAGE_TAG)" --platform=linux/amd64,linux/arm64 --push .
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: clean-kubebuilder
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-kubebuilder:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 42):
+	rm -Rf _test/kubebuilder
+	
+
+rendered-manifest.yaml:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 24):
+	helm template \
+	--name example-webhook \
+	--set image.repository=$(IMAGE_NAME) \
+	--set image.tag=$(IMAGE_TAG) \
+	deploy/example-webhook > "$(OUT)/rendered-manifest.yaml"
+	
+
+_test/kubebuilder:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 34):
+	curl -fsSL https://go.kubebuilder.io/test-tools/$(KUBE_VERSION)/$(OS)/$(ARCH) -o kubebuilder-tools.tar.gz
+	mkdir -p _test/kubebuilder
+	tar -xvf kubebuilder-tools.tar.gz
+	mv kubebuilder/bin _test/kubebuilder/
+	rm kubebuilder-tools.tar.gz
+	rm -R kubebuilder
+	
+
+# files hash-table stats:
+# Load=12/1024=1%, Rehash=0, Collisions=0/27=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri Aug 12 16:22:45 2022
+
+ 
