@@ -8,9 +8,6 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels:
     app: {{ include "oci-webhook.name" . }}
-    chart: {{ include "oci-webhook.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
 spec:
   selfSigned: {}
 
@@ -24,9 +21,6 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels:
     app: {{ include "oci-webhook.name" . }}
-    chart: {{ include "oci-webhook.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
 spec:
   secretName: {{ include "oci-webhook.rootCACertificate" . }}
   duration: 43800h # 5y
@@ -45,9 +39,6 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels:
     app: {{ include "oci-webhook.name" . }}
-    chart: {{ include "oci-webhook.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
 spec:
   ca:
     secretName: {{ include "oci-webhook.rootCACertificate" . }}
@@ -62,9 +53,6 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels:
     app: {{ include "oci-webhook.name" . }}
-    chart: {{ include "oci-webhook.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
 spec:
   secretName: {{ include "oci-webhook.servingCertificate" . }}
   duration: 8760h # 1y

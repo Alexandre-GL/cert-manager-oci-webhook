@@ -4,9 +4,6 @@ metadata:
   name: v1alpha1.{{ .Values.groupName }}
   labels:
     app: {{ include "oci-webhook.name" . }}
-    chart: {{ include "oci-webhook.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
   annotations:
     cert-manager.io/inject-ca-from: "{{ .Release.Namespace }}/{{ include "oci-webhook.servingCertificate" . }}"
 spec:

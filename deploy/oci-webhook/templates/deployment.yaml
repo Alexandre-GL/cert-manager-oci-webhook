@@ -4,9 +4,6 @@ metadata:
   name: {{ include "oci-webhook.fullname" . }}
   labels:
     app: {{ include "oci-webhook.name" . }}
-    chart: {{ include "oci-webhook.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
 spec:
   replicas: 1
   selector:
