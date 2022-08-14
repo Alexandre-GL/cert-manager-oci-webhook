@@ -23,7 +23,7 @@ metadata:
     app: {{ include "oci-webhook.name" . }}
 spec:
   secretName: {{ include "oci-webhook.rootCACertificate" . }}
-  duration: 43800h # 5y
+  duration: 43800h0m0s # 5y
   issuerRef:
     name: {{ include "oci-webhook.selfSignedIssuer" . }}
   commonName: "ca.oci-webhook.cert-manager"
@@ -55,7 +55,7 @@ metadata:
     app: {{ include "oci-webhook.name" . }}
 spec:
   secretName: {{ include "oci-webhook.servingCertificate" . }}
-  duration: 8760h # 1y
+  duration: 8760h0m0s # 1y
   issuerRef:
     name: {{ include "oci-webhook.rootCAIssuer" . }}
   dnsNames:

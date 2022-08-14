@@ -247,7 +247,7 @@ metadata:
     app: oci-webhook
 spec:
   secretName: cert-manager-oci-webhook-ca
-  duration: 43800h # 5y
+  duration: 43800h0m0s # 5y
   issuerRef:
     name: cert-manager-oci-webhook-selfsign
   commonName: "ca.oci-webhook.cert-manager"
@@ -264,7 +264,7 @@ metadata:
     app: oci-webhook
 spec:
   secretName: cert-manager-oci-webhook-webhook-tls
-  duration: 8760h # 1y
+  duration: 8760h0m0s # 1y
   issuerRef:
     name: cert-manager-oci-webhook-ca
   dnsNames:
